@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head><meta charset="UTF-8"><title>إضافة مريض</title>
+<style>
+body{font-family:Arial;margin:0;background:#f0f4f8}
+nav{background:#2c7be5;color:white;padding:15px 20px;display:flex;justify-content:space-between}
+nav a{color:white;text-decoration:none;margin-left:15px}
+.container{padding:20px;max-width:500px;margin:auto}
+.box{background:white;padding:25px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+input,select{width:100%;padding:9px;margin:7px 0;border:1px solid #ddd;border-radius:5px;box-sizing:border-box}
+button{width:100%;padding:11px;background:#28a745;color:white;border:none;border-radius:5px;font-size:15px;cursor:pointer}
+</style></head>
+<body>
+<nav><span>🏥 المستشفى</span><div><a href="/patients">المرضى</a><a href="/logout">خروج</a></div></nav>
+<div class="container"><h2>إضافة مريض</h2>
+<div class="box">
+<form method="POST">
+<input type="text" name="name" placeholder="الاسم" required>
+<input type="number" name="age" placeholder="العمر" required>
+<select name="gender"><option value="ذكر">ذكر</option><option value="أنثى">أنثى</option></select>
+<input type="text" name="phone" placeholder="الهاتف">
+<input type="text" name="diagnosis" placeholder="التشخيص">
+<input type="text" name="doctor" placeholder="الطبيب">
+<button type="submit">إضافة</button>
+</form></div></div></body></html>
